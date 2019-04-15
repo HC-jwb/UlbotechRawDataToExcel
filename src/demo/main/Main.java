@@ -56,8 +56,16 @@ public class Main {
 							data.setFul_data(line.substring(previousCommaIndex + 5, i));
 							break;
 						case "OAL":
+							data.setOal_data(line.substring(previousCommaIndex + 5, i));
 							break;
 						case "HDB":
+							data.setHdb_data(line.substring(previousCommaIndex + 5, i));
+							break;
+						case "VIN":
+							data.setVin_data(line.substring(previousCommaIndex + 5, i));
+							break;
+						case "TRP":
+							data.setTrp_data(line.substring(previousCommaIndex + 5, i));
 							break;
 						default:
 							break;
@@ -91,13 +99,19 @@ public class Main {
 								flag = "FUL";
 								break;
 							case "EVT":
-								data.setEvt_data(line.substring(i + 5, lineCharArray.length));
+								data.setEvt_data(line.substring(i + 5, lineCharArray.length - 1));
 								break;
 							case "OAL":
 								flag = "OAL";
 								break;
 							case "HDB":
 								flag = "HDB";
+								break;
+							case "VIN":
+								flag = "VIN";
+								break;
+							case "TRP":
+								flag = "TRP";
 								break;
 							default:
 								flag = "";
@@ -119,15 +133,14 @@ public class Main {
 				System.out.println("OBD : " + dataList.get(i).getObd_data());
 				System.out.println("FUL : " + dataList.get(i).getFul_data());
 				System.out.println("EVT : " + dataList.get(i).getEvt_data());
-			}
-
-			
-			
+				System.out.println("OAL : " + dataList.get(i).getOal_data());
+				System.out.println("HDB : " + dataList.get(i).getHdb_data());
+				System.out.println("VIN : " + dataList.get(i).getVin_data());
+				System.out.println("TRP : " + dataList.get(i).getTrp_data());
+			}	
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
-
 }
