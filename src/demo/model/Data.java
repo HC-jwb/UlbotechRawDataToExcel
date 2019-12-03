@@ -1,18 +1,18 @@
 package demo.model;
 
 public class Data {
-	String device_imei;
-	String current_time;
-	String gps_location;
-	String lbs_location;
-	String stt_data;
-	String mgr_data;
-	String ful_data;
-	String adc_data;
-	String obd_data;
-	String hdb_data;
-	String evt_data;
-	String vin_data;
+	private String device_imei;
+	private String current_time;
+	private String gps_location;
+	private String lbs_location;
+	private String stt_data;
+	private String mgr_data;
+	private String ful_data;
+	private String adc_data;
+	private String obd_data;
+	private String hdb_data;
+	private String evt_data;
+	private String vin_data;
 	
 	public String getVin_data() {
 		return vin_data;

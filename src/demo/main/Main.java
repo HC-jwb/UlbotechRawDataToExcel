@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Locale;
 
 import demo.io.InitialFileIO;
 import demo.model.Data;
@@ -123,20 +126,20 @@ public class Main {
 				}
 				dataList.add(data);
 			}
-
+			
 			for (int i = 0; i < dataList.size(); i++) {
-				System.out.println("GPS : " + dataList.get(i).getGps_location());
-				System.out.println("LBS : " + dataList.get(i).getLbs_location());
-				System.out.println("STT : " + dataList.get(i).getStt_data());
-				System.out.println("MGR : " + dataList.get(i).getMgr_data());
-				System.out.println("ADC : " + dataList.get(i).getAdc_data());
-				System.out.println("OBD : " + dataList.get(i).getObd_data());
-				System.out.println("FUL : " + dataList.get(i).getFul_data());
-				System.out.println("EVT : " + dataList.get(i).getEvt_data());
-				System.out.println("OAL : " + dataList.get(i).getOal_data());
-				System.out.println("HDB : " + dataList.get(i).getHdb_data());
-				System.out.println("VIN : " + dataList.get(i).getVin_data());
-				System.out.println("TRP : " + dataList.get(i).getTrp_data());
+//				System.out.println("GPS : " + dataList.get(i).getGps_location());
+//				System.out.println("LBS : " + dataList.get(i).getLbs_location());
+//				System.out.println("STT : " + dataList.get(i).getStt_data());
+//				System.out.println("MGR : " + dataList.get(i).getMgr_data());
+//				System.out.println("ADC : " + dataList.get(i).getAdc_data());
+//				System.out.println("OBD : " + dataList.get(i).getObd_data());
+//				System.out.println("FUL : " + dataList.get(i).getFul_data());
+//				System.out.println("EVT : " + dataList.get(i).getEvt_data());
+//				System.out.println("OAL : " + dataList.get(i).getOal_data());
+//				System.out.println("HDB : " + dataList.get(i).getHdb_data());
+//				System.out.println("VIN : " + dataList.get(i).getVin_data());
+//				System.out.println("TRP : " + dataList.get(i).getTrp_data());
 			}	
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
